@@ -1,19 +1,23 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * print_alphabet - Entry point
- * Description: a function that prints the alphabet,
- * in lowecase followed by a new line
- * Return: void 
+ * print_alphabet_10 a function that prints 10 times the alphabet
+ *
+ * Return: x10 a-z 
  */
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {	
-	char letter = 'a';
+	int n, i;
 
-	while (letter <= 'z')
+	i = 0;
+
+	while (i < 10)
 	{
-		_putchar(letter);	
-		letter++;
+		for (n = 'a'; n <= 'z'; n++)
+		{
+			_putchar(n);
+		}	
+		i++;
+		_putchar(n);
 	}
-	_putchar('\n');
 } 
