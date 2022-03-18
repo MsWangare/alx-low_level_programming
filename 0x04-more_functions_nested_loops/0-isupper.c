@@ -1,16 +1,13 @@
 #include "main.h"
 
-/** 
- * _isupper - function that checks for uppercase character.
- *  @c: the int for the paramaters of my function
- *   Return: 0 
+/**
+ * _isupper - returns the largest of 3 numbers
+ *  @c: char to check if is upper case 
+ *   Return: 1 if is upper case 0 if not
  */
-Int _isupper(int c)
+int _isupper(int c)
 {	
-	     if (c >= 65 && c <= 90)	
-	     {	 
-	     return (1);
-             }	
-              else 
-	      return (0);
-}
+	if (c > 64 && c < 91)
+		return (1);	
+	return (0);
+ }
