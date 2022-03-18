@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  * print_diagonal -entry point
@@ -13,7 +13,9 @@ void print_diagonal (int n)
      int row, num_lines;
 
      if (n <= 0)
-     }
+     {
+	     _putchar('\n');
+     }	     
      else
      {
 	     for(row = 1; row <= n; row++)
