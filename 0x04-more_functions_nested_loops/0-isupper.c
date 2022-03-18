@@ -1,13 +1,17 @@
+cat 0-main.c 
 #include "main.h"
-
+ #include <stdio.h> 
 /**
- * _isupper - returns the largest of 3 numbers
- *  @c: char to check if is upper case 
- *   Return: 1 if is upper case 0 if not
- */
-int _isupper(int c)
-{	
-	if (c > 64 && c < 91)
-		return (1);	
-	return (0);
+ *  * main - check the code.
+ *   * 
+ *   * Return: Always 0. 
+ *   */ 
+int main(void) 
+{
+ char c; c = 'A'; printf("%c: %d\n", c, _isupper
+		 (c)); 
+c = 'a'; 
+printf("%c: %d\n", c, _isupper
+		(c)); 
+return (0);
  }
