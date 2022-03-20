@@ -1,33 +1,33 @@
-#include <time.h>
 #include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
-/* more headers goes there */
-/**
-  * main - main block 
-  * Description: Print statements based on the last digit of the random number.
-  * Return: 0
-  */
 
-/* betty style doc for function main goes there  */
+/**
+ * main - Prints a text according number
+ *
+ * Return: Always (Success)
+ */
 int main(void)
 {
-	int n;
-	int m;
+	int n, lastd;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	m = n % 10;
-	/* your code goes there */
+	lastd = n % 10;
 
-	if (m > 5)	
-	 printf("Last digit of %i is %i and is greater than 5\n",		 n, m);
-	else if (m == 0)
-	printf("Last digit of %i is %i1:wq
-		      	and is 0\n", n, m);	
-	else	  
-   printf("Last digit of %i is %i and is less than 6 and not 0\n",
-		       			n, m);
+	if (lastd > 5)
+	{
+		printf("Last digit of %d is %d and is greater than 5\n", n, lastd);
+	}
+	else if (lastd == 0)
+	{
+		printf("Last digit of %d is %d and is 0\n", n, lastd);
+	}
+	else if (lastd < 6 && lastd != 0)
+	{
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lastd);
+	}
+
 	return (0);
 }
-
 
