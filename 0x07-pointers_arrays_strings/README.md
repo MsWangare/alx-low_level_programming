@@ -1,2 +1,1 @@
-
-More Functions on Arrays,Pointers and Strings.
+<<More Functions on Arrays,Pointers and Strings.
